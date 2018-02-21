@@ -8,6 +8,7 @@ public class Main {
 		System.out.print("Enter the radius of the circle: ");
 		double radius = input.nextDouble();
 		System.out.println("Its area is: " + circleArea(radius));
+		System.out.println("Its half-area is: " + circleHalfArea(radius));
 		input.close();
 		
 	}
@@ -15,6 +16,12 @@ public class Main {
 	static double circleArea(double rad){
 		
 		return Math.PI*rad*rad;
+		
+	}
+	
+	static double circleHalfArea(double rad){
+		
+		return (Math.PI*rad*rad)/2;
 		
 	}
 	
